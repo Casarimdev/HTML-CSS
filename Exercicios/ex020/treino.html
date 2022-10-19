@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <style>
+        body{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left ,darkblue,blue,rgb(39, 39, 241));
+            background-attachment: fixed;
+        }
+        #d1{
+            background-color: gray;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            display: inline-block;
+        }
+        #d1:hover{
+            background-color: yellow;
+        }
+        a{
+            color: grey;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            background-color: grey;
+            color: red;
+            text-decoration: underline;
+        }
+        a:visited{
+            color: white;
+        }
+        a:active{
+            color: yellow;
+        }
+        
+        .hv{
+            color: white;
+            text-decoration: underline;
+        }
+        .hv  > p{
+            display: none;
+        }
+        .hv:hover{
+            color: red;
+        }
+        .hv:hover > p{
+            display: block;
+            color: black;
+            background-color: red;
+            width: 400px;
+        }
+        .hov{
+            color: white;
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Treino Capitulo 14</h1>
+    <h2 class="hov">HOVER</h2>
+    <p class="hov">Exemplo de hover</p>
+    <div class="hv">Passe o mouse aqui para ver o texto escondido
+        <p class="t1">TEXTO ESCONDIDO...</p>
+    </div>
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=g-7bCYYkMak&list=RD1OuP40X4tPE&index=3" target="_blank">youtube</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+    </ul>
+    <h2>Pseudo-Classes</h2>
+    <div id="d1">01</div>
+    <div id="d1">02</div>
+    <div id="d1">03</div>
+</body>
+</html>
